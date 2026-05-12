@@ -1,0 +1,10 @@
+[05-Nov-2024 01:47:48 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Interface 'JsonSerializable' not found in /home/paperproc/public_html/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php:11
+Stack trace:
+#0 /home/paperproc/public_html/vendor/composer/ClassLoader.php(576): include()
+#1 /home/paperproc/public_html/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/home/paperproc...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#3 /home/paperproc/public_html/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(12): spl_autoload_call('Illuminate\\Supp...')
+#4 /home/paperproc/public_html/vendor/composer/ClassLoader.php(576): include('/home/paperproc...')
+#5 /home/paperproc/public_html/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/home/paperproc...')
+#6 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Supp...')
+#7 /home/paperproc/public_html/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): spl_autoload_call(' in /home/paperproc/public_html/vendor/laravel/framework/src/Illuminate/Collections/Enumerable.php on line 11
