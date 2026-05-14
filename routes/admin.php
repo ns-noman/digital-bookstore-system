@@ -8,7 +8,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.'], fu
         return redirect()->route('admin.auth.login');
     });
 
-    /*authentication*/
+    /*authentication */
     Route::group(['namespace' => 'Auth', 'prefix' => 'auth', 'as' => 'auth.'], function () {
         Route::get('login', 'LoginController@login')->name('login');
         Route::post('login', 'LoginController@submit')->middleware('actch');
