@@ -78,6 +78,8 @@
 - paytabs_invoices
 - soft_credentials
 
+---
+
 ## ⚙️ Installation
 
 ```bash
@@ -91,68 +93,34 @@ cp .env.example .env
 php artisan key:generate
 
 
-
----
-
-```md
-## 🔧 Setup Database
-
-```env
+🔧 Setup Database
 DB_DATABASE=your_database_name
 DB_USERNAME=root
 DB_PASSWORD=
 
-
-
----
-
-```md
-## 🧱 Run Migrations
-
-```bash
+🧱 Run Migrations
 php artisan migrate --seed
-
-
----
-
-```md
-## 🚀 Start Server
-
-```bash
+🚀 Start Server
 php artisan serve
+🔐 Authentication
+Laravel Passport (API Authentication)
+Laravel Sanctum (SPA Authentication)
+OTP / Email Verification System
+💳 Payment Gateways
+Stripe
+PayPal
+Razorpay
+Paystack
+Nagad
+MercadoPago
+Custom Invoice System
+👨‍💻 Developer Notes
+Modular helper-based architecture (app/CPU/)
+Wallet-based financial system
+Multi-vendor support
+Role-based access system
+API-ready structure
+📌 Author
 
-
----
-
-```md
-## 🔐 Authentication
-
-- Laravel Passport (API Authentication)
-- Laravel Sanctum (SPA Authentication)
-- OTP / Email Verification System
-
-
-## 💳 Payment Gateways
-
-- Stripe
-- PayPal
-- Razorpay
-- Paystack
-- Nagad
-- MercadoPago
-- Custom Invoice System
-
-
-## 👨‍💻 Developer Notes
-
-- Modular helper-based architecture (`app/CPU/`)
-- Wallet-based financial system
-- Multi-vendor support
-- Role-based access system
-- API-ready structure
-
-
-## 📌 Author
-
-**Nowab Shorif**  
-Software Developer (Laravel | React | CodeIgniter | Javascripot | Node.js | Next.js)
+Nowab Shorif
+Software Developer (Laravel | React | CodeIgniter | JavaScript | Node.js | Next.js)
