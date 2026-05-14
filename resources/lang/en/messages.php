@@ -1612,4 +1612,6 @@
   'Discount on Purchase' => 'Discount on Purchase',
   'Payment Incomplete' => 'Payment Incomplete',
   'Order payment is incomplete' => 'Order payment is incomplete',
+  'Order No' => 'Order No',
+  'Order NO' => 'Order NO',
 );

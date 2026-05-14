@@ -13,6 +13,7 @@ class Category extends Model
     protected $casts = [
         'parent_id' => 'integer',
         'position' => 'integer',
+        'order' => 'integer',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
         'home_status' => 'integer',

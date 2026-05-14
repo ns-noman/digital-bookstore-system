@@ -51,6 +51,7 @@ class CategoryController extends Controller
         $category->commission = $request->commission;
         $category->parent_id = 0;
         $category->position = 0;
+        $category->order = $request->order;
         $category->save();
 
         $data = [];
@@ -88,6 +89,7 @@ class CategoryController extends Controller
             $category->icon = ImageManager::update('category/', $category->icon, 'png', $request->file('image'));
         }
         $category->commission = $request->commission;
+        $category->order = $request->order;
         $category->save();
 
         foreach ($request->lang as $index => $key) {

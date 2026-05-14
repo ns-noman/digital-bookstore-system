@@ -1295,16 +1295,16 @@
             "position": "right"
         },
         "brandSetting": {
-            "brandName": "Paperproc",
+            "brandName": "{{$web_config['name']->value}}",
             "brandSubTitle": "We are reply as soon as possible",
-            "brandImg": "https://paperproc.com/storage/app/public/company/2023-07-19-64b7c5ce1b645.png",
-            "welcomeText": "How can I help you?",
-            "messageText": "",
+            "brandImg": "{{asset("storage/app/public/company")."/".$web_config['fav_icon']->value}}",
+            "welcomeText": "Hello! 👋 Thank you for contacting {{$web_config['name']->value}}. Please send us your message and our team will respond as soon as possible.",
+            "messageText": "Hello, I need some information regarding your products.",
             "backgroundColor": "#0a5f54",
             "ctaText": "Send Message",
             "borderRadius": "25",
             "autoShow": false,
-            "phoneNumber": "+8801322910415"
+            "phoneNumber": "{{ $web_config['phone']->value }}"
         }
     });
 </script>

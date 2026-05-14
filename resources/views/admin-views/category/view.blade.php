@@ -82,10 +82,16 @@
                                         </center>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-6">
                                    <div class="form-group lang_form"  id="form">
                                             <label class="input-label"  for="">{{\App\CPU\translate('Commission')}} </label>
                                             <input type="text" name="commission" value="10" class="form-control"  placeholder="{{\App\CPU\translate('Commission')}}"  required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                   <div class="form-group lang_form"  id="form">
+                                            <label class="input-label"  for="">{{\App\CPU\translate('Order No')}} </label>
+                                            <input type="text" name="order" value="" class="form-control"  placeholder="{{\App\CPU\translate('Order No')}}" required>
                                     </div>
                                 </div>
                             </div>
@@ -130,6 +136,7 @@
                                 <thead class="thead-light">
                                 <tr>
                                     <th style="width: 100px">{{ \App\CPU\translate('category')}} {{ \App\CPU\translate('ID')}}</th>
+                                    <th>{{ \App\CPU\translate('Order NO')}}</th>
                                     <th>{{ \App\CPU\translate('name')}}</th>
                                     <th>{{ \App\CPU\translate('slug')}}</th>
                                     <th>{{ \App\CPU\translate('Commission')}}</th>
@@ -142,6 +149,7 @@
                                 @foreach($categories as $key=>$category)
                                     <tr>
                                         <td class="text-center">{{$category['id']}}</td>
+                                        <td>{{$category['order']}}</td>
                                         <td>{{$category['name']}}</td>
                                         <td>{{$category['slug']}}</td>
                                         <td>{{$category['commission']}}  </td>

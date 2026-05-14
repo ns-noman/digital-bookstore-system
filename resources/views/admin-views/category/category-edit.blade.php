@@ -71,6 +71,12 @@
                                              <input type="text" name="commission" class="form-control" value="{{ $category['commission'] }}"  placeholder="{{\App\CPU\translate('Commission')}}"  required>
                                      </div>
                                  </div>
+                                <div class="col-6">
+                                    <div class="form-group lang_form"  id="form">
+                                             <label class="input-label"  for="">{{\App\CPU\translate('Order No')}} </label>
+                                             <input type="text" name="order" class="form-control" value="{{ $category['order'] }}"  placeholder="{{\App\CPU\translate('Order')}}"  required>
+                                     </div>
+                                 </div>
                                 <!--image upload only for main category-->
                                 @if($category['parent_id']==0)
                                     <div class="col-6 from_part_2">

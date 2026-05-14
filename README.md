@@ -1,190 +1,78 @@
-# 📚 Digital Bookstore System
+<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-A full-featured **Laravel-based Digital Bookstore E-commerce Platform** designed for managing online book sales, multi-role administration, sellers, customers, delivery system, wallets, and advanced e-commerce operations.
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
----
+## About Laravel
 
-# 🚀 Project Overview
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-The **Digital Bookstore System** is a scalable multi-vendor e-commerce platform where users can browse, search, and purchase books online.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-It includes:
-- Complete Admin Panel
-- Seller Management System
-- Wallet System
-- Coupon & Discount System
-- Order Processing System
-- Delivery Tracking System
-- Support Ticket System
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
----
+## Learning Laravel
 
-# 🏗️ Tech Stack
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-- Backend: Laravel (PHP Framework)
-- Database: MySQL
-- Frontend: Blade / Bootstrap / JavaScript
-- Authentication: Laravel Auth / OAuth
-- Payment Integration: Supported via modules
-- Architecture: MVC (Modular Enterprise Structure)
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
----
+## Laravel Sponsors
 
-# 👥 User Roles
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-- Admin
-- Sellers
-- Customers
-- Delivery Men
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
+- [We Are The Robots Inc.](https://watr.mx/)
+- [Understand.io](https://www.understand.io/)
+- [Abdel Elrafa](https://abdelelrafa.com)
+- [Hyper Host](https://hyper.host)
+- [Appoly](https://www.appoly.co.uk)
+- [OP.GG](https://op.gg)
 
----
+## Contributing
 
-# 📦 Core Modules
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## 🛒 E-Commerce Core
-- Product management
-- Categories & brands
-- Attributes & colors
-- Product stocks
-- Reviews & wishlists
+## Code of Conduct
 
-## 🧑‍💼 User Management
-- Admins
-- Users
-- Sellers
-- Delivery men
-- Authentication & verification system
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## 🛍️ Order System
-- Cart management
-- Orders & order details
-- Order transactions
-- Delivery history
-- Shipping methods & addresses
+## Security Vulnerabilities
 
-## 💰 Wallet System
-- Admin wallets & history
-- Customer wallets & transactions
-- Seller wallets & transactions
-- Withdraw requests
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## 🎯 Marketing System
-- Coupons
-- Flash deals
-- Deal of the day
-- Feature deals
-- Banners
+## License
 
-## 💬 Communication System
-- Chatting system
-- Support tickets & conversations
-- Notifications
-- Contacts
-
-## ⚙️ System Configuration
-- Business settings
-- Social media links
-- Shipping configuration
-- Currency management
-- Countries & cities
-- Translations
-
----
-
-# 🗃️ Database Structure
-
-## 👤 Admin & User
-- admins
-- users
-- delivery_men
-- sellers
-
-## 🛒 Products & Catalog
-- products
-- categories
-- brands
-- attributes
-- colors
-- product_stocks
-
-## 🛍️ Orders & Cart
-- carts
-- orders
-- order_details
-- order_transactions
-- cart_shippings
-
-## 💳 Wallet & Transactions
-- admin_wallets
-- admin_wallet_histories
-- customer_wallets
-- customer_wallet_histories
-- seller_wallets
-- seller_wallet_histories
-- transactions
-- withdraw_requests
-
-## 🚚 Shipping & Delivery
-- shipping_addresses
-- billing_addresses
-- shipping_methods
-- delivery_histories
-
-## 🎯 Marketing
-- coupons
-- flash_deals
-- flash_deal_products
-- deal_of_the_days
-- feature_deals
-- banners
-
-## 💬 Support & Communication
-- chattings
-- support_tickets
-- support_ticket_convs
-- notifications
-- contacts
-
-## 🌍 System Settings
-- business_settings
-- currencies
-- countries
-- cities
-- social_medias
-- translations
-
-## 🔐 Authentication & System
-- password_resets
-- oauth_* tables
-- phone_or_email_verifications
-- failed_jobs
-- migrations
-- soft_credentials
-
----
-
-# ⚙️ Installation Guide
-
-```bash
-git clone https://github.com/your-username/digital-bookstore-system.git
-cd digital-bookstore-system
-composer install
-cp .env.example .env
-php artisan key:generate
-
-🔧 Configure Database
-DB_DATABASE=your_db_name
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-
-
-🗄️ Run Migrations
-php artisan migrate
-
-
-🌱 Seed Database (Optional)
-php artisan db:seed
-
-
-🚀 Start Server
-php artisan serve
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

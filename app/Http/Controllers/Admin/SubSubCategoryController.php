@@ -40,6 +40,7 @@ class SubSubCategoryController extends Controller
         $category->commission = $request->commission;
         $category->parent_id = $request->parent_id;
         $category->position = 2;
+        $category->order = $request->order;
         $category->save();
         foreach($request->lang as $index=>$key)
         {
@@ -71,6 +72,7 @@ class SubSubCategoryController extends Controller
         $category->commission = $request->commission;
         $category->parent_id = $request->parent_id;
         $category->position = 2;
+        $category->order = $request->order;
         $category->save();
         return response()->json();
     }
