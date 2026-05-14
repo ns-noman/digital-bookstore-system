@@ -83,7 +83,7 @@
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-repo/book-ecommerce.git
+git clone https://github.com/nowab-shorif/book-ecommerce.git
 cd book-ecommerce
 
 composer install
