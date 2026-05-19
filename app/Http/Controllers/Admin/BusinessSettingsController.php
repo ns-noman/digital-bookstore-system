@@ -202,7 +202,9 @@ class BusinessSettingsController extends Controller
         //comapy shop banner
         $imgBanner = BusinessSetting::where(['type' => 'shop_banner'])->first();
         if ($request->has('shop_banner')) {
-            $imgBanner = ImageManager::update('shop/', $imgBanner, 'png', $request->file('shop_banner'));
+            $ext = $request->file('shop_banner')->getClientOriginalExtension();
+            $imgBanner = ImageManager::update('shop/', $imgBanner, $ext, $request->file('shop_banner'));
+        
             DB::table('business_settings')->updateOrInsert(['type' => 'shop_banner'], [
                 'value' => $imgBanner
             ]);
@@ -255,7 +257,9 @@ class BusinessSettingsController extends Controller
         //web logo
         $webLogo = BusinessSetting::where(['type' => 'company_web_logo'])->first();
         if ($request->has('company_web_logo')) {
-            $webLogo = ImageManager::update('company/', $webLogo, 'png', $request->file('company_web_logo'));
+            $ext = $request->file('company_web_logo')->getClientOriginalExtension();
+            $webLogo = ImageManager::update('company/', $webLogo, $ext, $request->file('company_web_logo'));
+        
             BusinessSetting::where(['type' => 'company_web_logo'])->update([
                 'value' => $webLogo,
             ]);
@@ -264,7 +268,9 @@ class BusinessSettingsController extends Controller
         //mobile logo
         $mobileLogo = BusinessSetting::where(['type' => 'company_mobile_logo'])->first();
         if ($request->has('company_mobile_logo')) {
-            $mobileLogo = ImageManager::update('company/', $mobileLogo, 'png', $request->file('company_mobile_logo'));
+            $ext = $request->file('company_mobile_logo')->getClientOriginalExtension();
+            $mobileLogo = ImageManager::update('company/', $mobileLogo, $ext, $request->file('company_mobile_logo'));
+        
             BusinessSetting::where(['type' => 'company_mobile_logo'])->update([
                 'value' => $mobileLogo,
             ]);
@@ -272,7 +278,9 @@ class BusinessSettingsController extends Controller
         //web footer logo
         $webFooterLogo = BusinessSetting::where(['type' => 'company_footer_logo'])->first();
         if ($request->has('company_footer_logo')) {
-            $webFooterLogo = ImageManager::update('company/', $webFooterLogo, 'png', $request->file('company_footer_logo'));
+            $ext = $request->file('company_footer_logo')->getClientOriginalExtension();
+            $webFooterLogo = ImageManager::update('company/', $webFooterLogo, $ext, $request->file('company_footer_logo'));
+        
             BusinessSetting::where(['type' => 'company_footer_logo'])->update([
                 'value' => $webFooterLogo,
             ]);
@@ -280,7 +288,9 @@ class BusinessSettingsController extends Controller
         //fav icon
         $favIcon = BusinessSetting::where(['type' => 'company_fav_icon'])->first();
         if ($request->has('company_fav_icon')) {
-            $favIcon = ImageManager::update('company/', $favIcon, 'png', $request->file('company_fav_icon'));
+            $ext = $request->file('company_fav_icon')->getClientOriginalExtension();
+            $favIcon = ImageManager::update('company/', $favIcon, $ext, $request->file('company_fav_icon'));
+        
             BusinessSetting::where(['type' => 'company_fav_icon'])->update([
                 'value' => $favIcon,
             ]);

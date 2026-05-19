@@ -425,9 +425,7 @@ class WebController extends Controller
     public function products(Request $request)
     {
         $request['sort_by'] == null ? $request['sort_by'] == 'latest' : $request['sort_by'];
-
         $porduct_data = Product::active()->with(['reviews']);
-
         if ($request['data_from'] == 'category') {
             $products = $porduct_data->get();
             $product_ids = [];
@@ -545,7 +543,6 @@ class WebController extends Controller
         if ($request['data_from'] == 'brand') {
             $data['brand_name'] = Brand::find((int)$request['id'])->name;
         }
-
         return view('web-views.products.view', compact('products', 'data'), $data);
     }
 

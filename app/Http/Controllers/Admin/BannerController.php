@@ -84,8 +84,18 @@ class BannerController extends Controller
         $banner->resource_type = $request->resource_type;
         $banner->resource_id = $request[$request->resource_type.'_id'];
         $banner->url = $request->url;
-        if($request->file('image')) {
-            $banner->photo = ImageManager::update('banner/', $banner['photo'], 'png', $request->file('image'));
+        if ($request->file('image')) {
+        
+            $file = $request->file('image');
+        
+            $extension = strtolower($file->getClientOriginalExtension());
+        
+            $banner->photo = ImageManager::update(
+                'banner/',
+                $banner->photo,
+                $extension,
+                $file
+            );
         }
         $banner->save();
 

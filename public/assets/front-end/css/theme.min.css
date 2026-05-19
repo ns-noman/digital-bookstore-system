@@ -501,6 +501,28 @@
      max-height: 340px;
      overflow-y: scroll
  }
+    /* =========================
+       CUSTOM CONTAINER
+    ========================= */
+    .custom-container{
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 950px;
+    }
+    
+    @media(min-width:1200px){
+        .custom-container{
+            max-width: 1150px;
+        }
+    }
+    
+    @media(min-width:1400px){
+        .custom-container{
+            max-width: 1350px;
+        }
+    }
  
  .container {
      width: 100%;
